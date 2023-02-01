@@ -14,6 +14,8 @@ import './App.css'; //importamos y ejecutamos
 import { Navbar } from './Navbar/Navbar';
 import { CartWidget } from './CartWidget/CartWidget';
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
+import { ItemCount } from './ItemCount/ItemCount';
+
 
 export const App= () => {
   //<NombreComponente/>
@@ -23,6 +25,7 @@ export const App= () => {
       <Navbar valor={"DMD"}/> 
       <CartWidget cantCarrito={5}/>
       <ItemListContainer greeting={2}/>
+      <ItemCount ValorInicial={1} stock={10}/>
     </div>
 
   )
