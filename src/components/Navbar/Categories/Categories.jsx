@@ -1,17 +1,22 @@
+import { Link } from "react-router-dom";
 export const Categories = () => {
     return (
         <div>
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-                    <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">Logos</a>
-                        <a className="dropdown-item" href="#">Caricaturas</a>
-                        <a className="dropdown-item" href="#">Flyers</a>
-                    <div className="dropdown-divider" />
-                        <a className="dropdown-item" href="#">Gifs</a>
-                    </div>
+                <a className="nav-link dropdown-toggle btn btn-outline-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <ul className="dropdown-menu">
+                        <li><Link className="dropdown-item" to={'/category/logo'}>Logos</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/flyer'}>Flyers</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/banner'}>Banners</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/publicidad'}>Publicidad</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/disenioEditorial'}>Diseño Editorial</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/dibujo'}>Dibujos</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/personajeAnimado'}>Personajes Animados</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/marca'}>Marcas</Link></li>
+                        <li><Link className="dropdown-item" to={'/category/eslogan'}>Eslogans</Link></li>
+
+                    </ul>
             </li>
         </div>
     );
 }
-

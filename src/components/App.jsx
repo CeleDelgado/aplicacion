@@ -1,32 +1,24 @@
 import './App.css'; //importamos y ejecutamos
-
-/*
-  class => className
-  <input type="text"> => <input type="text"/>
-  style ="nombrePropiedad: valor" => style = {{"nombrePropiedad" : "valor"}}
-  `${}` => {}
-  mayor parte de atributos son en CamelCase
-  export => importo con llaves
-  export default => importo sin llaves
-*/
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //components
 import { Navbar } from './Navbar/Navbar';
-import { CartWidget } from './CartWidget/CartWidget';
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
-import { ItemCount } from './ItemCount/ItemCount';
+import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
 
 
 export const App= () => {
-  //<NombreComponente/>
   return (
-    //aqui colocamos el codigo, pero antes de hacerlo debemos pasarlo de html-css a jsx
-    <div>
-      <Navbar valor={"DMD"}/> 
-      <CartWidget cantCarrito={5}/>
-      <ItemListContainer greeting={2}/>
-      <ItemCount ValorInicial={1} stock={10}/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar valor={"DMD"}/> 
+        <Routes> 
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
+          <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
 
   )
 }

@@ -5,13 +5,14 @@ export const ItemCount = ({ValorInicial, stock}) => {
     
     
     //creamos las funciones tipo flecha de suma y resta
-    const sumar= () => contador < stock && setContador (contador+1)
-    const restar= () => contador > ValorInicial && setContador (contador-1)
+    const sumar= () => contador < stock && setContador (contador + 1)
+    const restar= () => contador > ValorInicial && setContador (contador - 1)
     return (
         <div>
-            <button className="btn btn-dark" onClick={()=> restar() }>-</button>
+            <button className="btn btn-dark" onClick={()=> restar()}>-</button>
             {contador}
-            <button className="btn btn-dark" onClick={()=> sumar() }>+</button>
+            <button className="btn btn-dark" onClick={()=> sumar()}>+</button>
+            <button className="btn btn-light">Agregar al Carrito</button>
         </div>
-    );
+    )
 }

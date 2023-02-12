@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 export const Sections = () => {
     return (
         <>
             <li className="nav-item">
-            <a className="nav-link active" href="#"><i className="bi bi-house"/>Inicio
-            <span className="visually-hidden">(current)</span>
-            </a>
+            <Link className="nav-link" to={'/'}><button className="btn btn-outline-light">Inicio</button></Link>
             </li>
+
             <li className="nav-item">
-            <a className="nav-link" href="#"><i className="bi bi-person-exclamation"/> Acerca de nosotros</a>
+            <button className="btn btn-outline-light">Nosotros </button>
             </li>
+
             <li className="nav-item">
-            <a className="nav-link" href="#"><i className="bi bi-person-workspace"/> Contacto</a>
+            <button className="btn btn-outline-light">Contacto </button>
             </li>
         </>
     );
