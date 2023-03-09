@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-export const Sections = () => {
+import React from "react";
+export const Sections = React.memo (() => {
     return (
         <>
             <li className="nav-item">
@@ -7,13 +8,13 @@ export const Sections = () => {
             </li>
 
             <li className="nav-item">
-            <button className="btn btn-outline-light">Nosotros </button>
+            <button className="btn btn-outline-dark">Nosotros </button>
             </li>
 
             <li className="nav-item">
-            <button className="btn btn-outline-light">Contacto </button>
+            <button className="btn btn-outline-dark">Contacto </button>
             </li>
         </>
     );
-}
+})
 

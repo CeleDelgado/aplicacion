@@ -1,0 +1,30 @@
+import { useDarkModeContext} from "../../context/DarkModeContext" 
+import { useCarritoContext } from "../../context/CarritoContext"
+import { ItemCount } from "../ItemCount/ItemCount"
+export const ItemCart = ({item}) => {
+    const {darkMode} = useDarkModeContext() 
+    const { removeItem, addItem} = useCarritoContext()
+    const onAdd = (cantidad) => { //agregar producto carrito
+        addItem(item, cantidad) 
+    }
+
+    return (
+        <div className="card mb-3 cardCart">
+            <div className="row g-0">
+                <div className="col-md-4">
+                    <img src={item.img} alt={`Imagen de ${item.nombre}`}/>
+                </div>
+                <div className="col-md-8">
+                    <div className={`card-body ${darkMode && "itemDetailBodyDark"}`}>
+                        <h5 className="card-title">{item.nombre} {item.modelo}</h5>
+                        <p className="card-text">Cantidad: {item.cant}</p>
+                        <p className="card-text">Precio Unitario: ${new Intl.NumberFormat('de-DE').format(item.precio)}</p>
+                        <p className="card-text">Subtotal: ${new Intl.NumberFormat('de-DE').format(item.cant * item.precio)} </p>
+                        <ItemCount ValorInicial= {1} stock={item.stock} onAdd={onAdd} textBoton="Actualizar"/>
+                        <button className="btn btn-danger" onClick={()=> removeItem(item.id) }>Eliminar del carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

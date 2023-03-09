@@ -54,3 +54,33 @@
 .cardDetail img {
     margin-top: 50%;
 }
+.contForm {
+    margin-top: 20px;
+}
+.cardBodyDark {
+    background-color: hsl(0, 0%, 33%);
+    margin-top: 3px;
+    text-align: center;
+}
+.itemDetailBodyDark {
+    background: hsl(0, 0%, 33%);
+    color: white;
+}
+.darkMode {
+    background-color: black;
+    color: white;
+}
+.cartContainer {
+    margin-top: 3%;
+    margin-left: 26,5%;
+}
+.divButtons button {
+    margin: 4px;
+}
+.cardCart {
+    max-width: 640px;
+}
+img {
+    margin-top: 3px;
+    max-width: 200px;
+}

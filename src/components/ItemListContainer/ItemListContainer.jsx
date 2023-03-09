@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { consultarBDD } from "../../utils/functions";
+import { getProductos } from "../../utils/firebase";
 import { ItemList } from "../ItemList/ItemList.jsx"
 
 
@@ -10,18 +10,20 @@ export const ItemListContainer = () => {
     
     useEffect(() =>{
         if(idCategoria){
-            consultarBDD("../json/productos.json").then(products => {
-                const prods= products.filter(prod => prod.idCategoria=== idCategoria)
-                const items= ItemList({prods})
+            getProductos().then(products => {
+                const prods= products.filter(prod=> prod.stock >0).filter(prod => prod.idCategoria=== idCategoria)
+                const items= <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
             })
         } else {
-            consultarBDD("./json/productos.json").then(prods => {
-                const items= ItemList({prods})
+            getProductos().then(products => {
+                const prods= products.filter(prod=> prod.stock >0)
+                const items= <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
             })
         } 
     }, [idCategoria])
+    
     
     return (
         <div className="row cardProductos">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-export const Categories = () => {
+import React from "react";
+export const Categories = React.memo (() => {
     return (
         <div>
             <li className="nav-item dropdown">
@@ -19,4 +20,4 @@ export const Categories = () => {
             </li>
         </div>
     );
-}
+})

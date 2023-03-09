@@ -1,70 +1,165 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----------------------------
+<!-- 
+Descripción de su proyecto;
+funcionalidades;
+Cómo pueden usarlo los usuarios;
+Donde los usuarios pueden encontrar ayuda sobre su proyecto;
+Autores del proyecto.
 
-## Available Scripts
+o tambien:
+Título e imagen de portada;
+Insignias;
+Índice;
+Descripción del Proyecto;
+Estado del proyecto;
+Demostración de funciones y aplicaciones;
+Acceso al Proyecto;
+Tecnologías utilizadas;
+Personas Contribuyentes;
+Personas Desarrolladoras del Proyecto;
+Licencia.
+Fecha de la última versión del proyecto: Agosto.
+-->
+<div id="titulo">
+<h1 align="center">
+  <p align="center">   Ecommerce- DMD  </p>
+  <img src="public/dmd-3d.jpg" alt="">
+</h1>
+</div>
 
-In the project directory, you can run:
+<p align="center">
+  
+  <div id="construido">
 
-### `npm start`
+## 👩‍💼🔧 Construido con...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img alt="css" src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img alt="Github" src="https://img.shields.io/badge/-GitHub-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
+  <img alt="Nodejs" src="https://img.shields.io/badge/-Node.js-43853d?style=flat-square&logo=nodedotjs&logoColor=white" />
+  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
+  <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+  <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
+  <img alt="React-Toastify" src="https://img.shields.io/badge/react-toastify-pink">
+  <img alt="React-Firebase" src="https://img.shields.io/badge/react-firebase-yellow"> 
+  
+  </div>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+----------------
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔘 Indice 
 
-### `npm run build`
+◽ [Título principal](#titulo)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+◽ [Construido con...](#construido)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+◽ [Descripción de la aplicación](#descripcion)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+◽ [Pre-requerimientos](#preRequerimientos)
 
-### `npm run eject`
+◽ [Ejecutando la aplicación](#ejecutandoApp)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+◽ [Versionado](#versionado)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+◽ [Autor](#autor)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+◽ [Licencia](#licencia)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+◽ [Agradecimientos](#agradecimientos)
 
-## Learn More
+---------------------
+<div align="justify" id="descripcion"> 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🟪 Descripción de la aplicación
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bienvenidos a nuestro Ecommerce "DMD", un sitio web donde podrá efectuar la compra de logos, eslogans, gifs y muchas cosas más, nos destacamos en el diseño e ilustración digital
 
-### Code Splitting
+🟣 **Usted podrá:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Observar todos los productos que ofrecemos, ver los detalles de cada uno de ellos, agregar más de un objeto al carrito si lo desea, efectuar un simulacro de compra, llenando un formulario previamente, el cual se encuentra con una validación a fín de que ingrese todos sus datos personales y una verificación de su email para que podamos ponernos en contacto con usted. la web ha sido adaptada para los diferentes dispositivos móviles, para que usted pueda acceder de donde lo desee sin ningún tipo de complicaciones.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</div>
 
-### Making a Progressive Web App
+------
+<div id="preRequerimientos">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🟨 Pre-requerimientos
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="justify">
+  
+🟡Instalar React y las siguientes dependencias:
 
-### Deployment
+```
+npm i firabase
+```
+```
+npm i react-router-dom 
+```
+```
+npm i react-toastify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+</p>
+</div>
 
-### `npm run build` fails to minify
+----------
+<div align="justify" id="ejecutandoApp">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🟫 Ejecutando la aplicación
+
+🟤 Para ejecutar la aplicación agregue el siguiente comando en la terminal:
+
+```
+npm run start
+```
+🟤 Luego vaya al:
+```
+localhost 3000
+```
+
+</div>
+
+---------------------
+
+
+<div id="versionado">
+
+## 🟦 Versionado
+
+Usamos [Git SCM](https://git-scm.com/) para el control de versiones. Para conocer las versiones disponibles, consulte las [etiquetas en este repositorio](https://github.com/CeleDelgado/).
+
+</div>
+
+<div id="autor">
+
+## ⬜ Autor
+
+🔲 **Celeste Delgado** - *Trabajo inicial, desarrollo y diseño. Este es un proyecto de CoderHouse* - [Cele Delgado](https://github.com/CeleDelgado/aplicacion)
+
+</div>
+
+<div id="licencia">
+
+## ⬛ Licencia
+
+Este proyecto tiene la licencia MIT; consulte el archivo [MIT-LICENSE.txt](MIT-LICENSE.txt) para obtener más información.
+
+</div>
+
+<div id="agradecimientos">
+
+## 🟧 Agradecimientos
+
+* Consejo de sombrero para cualquier persona cuyo código se haya utilizado
+* Inspiración
+* Cada página e información adicional recomendada sumo en gran cantidad para seguir creciendo
+
+</div>
