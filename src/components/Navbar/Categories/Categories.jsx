@@ -4,7 +4,7 @@ export const Categories = React.memo (() => {
     return (
         <div>
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle btn btn-outline-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                <a className="nav-link dropdown-toggle btn btn-success" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
                     <ul className="dropdown-menu">
                         <li><Link className="dropdown-item" to={'/category/logo'}>Logos</Link></li>
                         <li><Link className="dropdown-item" to={'/category/flyer'}>Flyers</Link></li>

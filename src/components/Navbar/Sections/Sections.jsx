@@ -4,15 +4,15 @@ export const Sections = React.memo (() => {
     return (
         <>
             <li className="nav-item">
-            <Link className="nav-link" to={'/'}><button className="btn btn-outline-light">Inicio</button></Link>
+            <Link className="nav-link" to={'/'}><button className="btn btn-outline-success">Inicio</button></Link>
             </li>
 
             <li className="nav-item">
-            <button className="btn btn-outline-dark">Nosotros </button>
+            <button className="btn btn-outline-success">Nosotros </button>
             </li>
 
             <li className="nav-item">
-            <button className="btn btn-outline-dark">Contacto </button>
+            <button className="btn btn-outline-success">Contacto </button>
             </li>
         </>
     );
