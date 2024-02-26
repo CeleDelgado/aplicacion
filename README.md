@@ -23,8 +23,8 @@ Fecha de la última versión del proyecto: Agosto.
 -->
 <div id="titulo">
 <h1 align="center">
-  <p align="center">   Ecommerce- DMD  </p>
-  <img src="public/dmd-3d.jpg" alt="">
+  <p align="center">   Ecommerce  </p>
+  
 </h1>
 </div>
 
